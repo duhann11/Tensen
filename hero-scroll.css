@@ -1,0 +1,4 @@
+.hero-media-scroll{position:relative;overflow:clip;padding-top:24px;margin-top:-24px}
+.hero-media-scroll .reel{--hero-scale:1;--hero-lift:0px;--hero-radius:8px;transform:translate3d(0,var(--hero-lift),0) scale(var(--hero-scale));transform-origin:50% 50%;border-radius:var(--hero-radius);transition:none;opacity:1;will-change:transform,border-radius}
+.hero-media-scroll .reel>canvas{transform-origin:50% 50%;will-change:transform;backface-visibility:hidden}
+@media(max-width:767px),(prefers-reduced-motion:reduce){.hero-media-scroll{padding-top:0;margin-top:0}.hero-media-scroll .reel{transform:none;border-radius:8px;will-change:auto}.hero-media-scroll .reel>canvas{transform:none!important;will-change:auto}}

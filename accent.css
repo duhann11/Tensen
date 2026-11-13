@@ -1,0 +1,21 @@
+:root{--accent:#c92b25;--accent-hover:#a51e19;--accent-soft:#f2ddd9;--accent-on-dark:#ff746b}
+::selection{background:var(--accent);color:#fff}
+.logo i,.logo b{background:var(--accent)}
+.eyebrow{color:var(--accent)}
+.process>.eyebrow{color:var(--accent-on-dark)}
+.button.dark{background:var(--accent);border-color:var(--accent);color:#fff}
+.button.dark:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+.button:not(.dark):hover{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-hover)}
+nav>a:not(.button):hover,.footer-top>a:not(.logo):hover,#menu>a:hover{color:var(--accent)}
+.filters .active{background:var(--accent);border-color:var(--accent);color:#fff}
+.filters button:not(.active):hover{border-color:var(--accent);color:var(--accent)}
+.work-progress i{background:var(--accent)}
+#work-position,.row-action,.services summary>span,.services summary>b{color:var(--accent)}
+.discipline:focus-visible,.button:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.row-fill{background:#f4e6e3}
+.count-mask{color:var(--accent-hover)}
+.about-principles>article>span{color:var(--accent)}
+.steps article>span{color:var(--accent-on-dark)}
+#close{background:var(--accent);color:#fff}
+.reel #motion:hover{border-color:var(--accent-on-dark);color:var(--accent-on-dark)}
+textarea:focus{border-color:var(--accent)}

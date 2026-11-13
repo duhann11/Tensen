@@ -1,0 +1,11 @@
+@font-face{font-family:Archimoto;src:url('./fonts/ArchimotoV00-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Archimoto;src:url('./fonts/ArchimotoV00-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Archimoto;src:url('./fonts/ArchimotoV00-SemiBold.otf') format('opentype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Archimoto;src:url('./fonts/ArchimotoV00-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap}
+:root{--font-display:Archimoto,Switzer,Arial,sans-serif}
+h1,h2,h3,h4,h5,h6,.logo,.footer-mark,.reel-word,.services summary{font-family:var(--font-display);font-synthesis:none}
+.logo{font-weight:600;letter-spacing:-.025em}
+h1,h2,.reel-word{letter-spacing:-.035em}
+.footer-mark{font-weight:600;letter-spacing:-.045em;font-size:14vw}
+dialog .case-grid h3{font-family:var(--font-display);font-weight:500;font-size:15px;letter-spacing:0}
+.services summary>span,.services summary>b{font-family:monospace}

@@ -1,0 +1,26 @@
+/* Give the directional sweep room to read and reserve a real action column. */
+.research-agency .discipline{grid-template-columns:minmax(140px,.9fr) minmax(0,1.5fr) 104px;column-gap:28px;padding:30px 22px;align-items:start}
+.research-agency .discipline-name{min-width:0}
+.research-agency .discipline h3{margin:0 0 12px;line-height:1.1}
+.research-agency .discipline>p{min-width:0;font-size:17px;line-height:1.45}
+.research-agency .row-fill{background:#fafaf8;transition:transform .65s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.research-agency .discipline.is-exiting .row-fill{transition:transform .42s cubic-bezier(.33,0,.67,1)}
+.research-agency .discipline .count-mask{height:22px;overflow:hidden;padding:0;margin:0;color:#777c7a;font:12px/20px monospace;letter-spacing:.3px}
+.research-agency .discipline .count-mask>span{display:block;transform:translate3d(0,125%,0);opacity:0;transition:transform .45s cubic-bezier(.22,.61,.36,1),opacity .22s ease;will-change:transform}
+.research-agency .discipline:is(:hover,:focus-visible) .count-mask>span{transform:translate3d(0,0,0);opacity:1;transition-delay:.08s}
+.research-agency .discipline .row-action{width:104px;display:flex;justify-content:flex-end;align-items:center;gap:12px;justify-self:end;position:relative;line-height:1;color:var(--accent)}
+.research-agency .discipline .explore{position:static;top:auto;right:auto;margin:0;opacity:0;transform:translate3d(9px,0,0);font:500 13px/1 Switzer,Arial;transition:opacity .25s ease,transform .42s cubic-bezier(.22,.61,.36,1)}
+.research-agency .discipline:is(:hover,:focus-visible) .explore{opacity:1;transform:translate3d(0,0,0);transition-delay:.07s}
+.research-agency .discipline .arrow-clip{width:1.15em;height:1.15em;flex:0 0 1.15em;font-size:22px;line-height:1;overflow:hidden;vertical-align:middle}
+.research-agency .discipline .arrow-clip>span{line-height:1;transform:translate(0,0);transition:transform .45s cubic-bezier(.455,.03,.515,.955)}
+.research-agency .discipline:is(:hover,:focus-visible) .arrow-clip>span{transform:translate(1.15em,-1.15em);transition-delay:.04s}
+@media(max-width:991px),(hover:none){.research-agency .discipline{grid-template-columns:minmax(120px,.9fr) minmax(0,1.5fr) 28px;column-gap:22px;padding:25px 0}.research-agency .discipline .row-action{width:28px}.research-agency .discipline .explore{display:none}.research-agency .discipline .count-mask>span{transform:none;opacity:1;transition:none}.research-agency .row-fill{will-change:auto}}
+@media(max-width:500px){.research-agency .discipline{grid-template-columns:1fr 28px;row-gap:15px}.research-agency .discipline>p{grid-column:1;grid-row:2}.research-agency .discipline .row-action{grid-column:2;grid-row:1}.research-agency .discipline h3{margin-bottom:8px}}
+@media(prefers-reduced-motion:reduce){.research-agency .row-fill,.research-agency .discipline .count-mask>span,.research-agency .discipline .explore,.research-agency .discipline .arrow-clip>span{transition:none!important;will-change:auto}}
+
+/* Longer service labels wrap within the animated metadata mask. */
+.research-agency .discipline .count-mask{height:auto;min-height:20px;line-height:1.6;font-size:9px;letter-spacing:.2px}
+.research-agency .discipline .count-mask>span{line-height:1.6;overflow-wrap:normal}
+.research-agency .discipline h3{overflow-wrap:normal;line-height:1.15}
+/* Hold the section title beside the scrolling services, within this section only. */
+@media(min-width:992px){.research-agency>div:first-child{position:sticky;align-self:start;top:calc(var(--lab-header-height,94px) + 32px)}}
