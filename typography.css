@@ -18,8 +18,8 @@ dialog .case-grid h3{font-family:var(--font-display);font-weight:500;font-size:1
   padding-inline: 4%;
 }
 .statement-heading h2 {
-  font-size: clamp(32px, 5.1vw, 88px);
-  line-height: 1.12;
+  font-size: clamp(30px, 3.45vw, 60px);
+  line-height: 1.08;
   max-width: none;
   overflow-wrap: anywhere;
 }
@@ -31,3 +31,24 @@ dialog .case-grid h3{font-family:var(--font-display);font-weight:500;font-size:1
   .statement-heading h2 { font-size: clamp(30px, 7.6vw, 52px); }
   .statement-copy { padding-top: 0; }
 }
+
+/* Shared display size for the two portfolio sections. */
+#branding-title,
+#website-work-title {
+  font-size: clamp(38px, 7.5vw, 128px);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+@media (min-width: 992px) and (max-height: 750px) {
+  #branding-title,
+  #website-work-title { font-size: clamp(48px, min(7.5vw, 14vh), 128px); }
+}
+
+#website-work .section-head {
+  display: grid;
+  justify-content: stretch;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+}
+#website-work .section-head > p { margin: 0; }
