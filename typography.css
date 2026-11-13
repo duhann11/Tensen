@@ -43,3 +43,12 @@ dialog .case-grid h3{font-family:var(--font-display);font-weight:500;font-size:1
   #branding-title,
   #website-work-title { font-size: clamp(48px, min(7.5vw, 14vh), 128px); }
 }
+
+#website-work .section-head {
+  display: grid;
+  justify-content: stretch;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+}
+#website-work .section-head > p { margin: 0; }
