@@ -32,18 +32,22 @@
 
 #website-work .featured-website{padding:0;background:#fff} #website-work .website-preview{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transform:none}
 
-/* The preview and its caption travel together, with separate surfaces. */
-#website-work .work-slide { background: transparent; border: 0; }
-#website-work .work-slide .art { border-radius: 8px; }
+/* Keep the preview and project details inside one card. */
+#website-work .work-slide {
+  background: #f8f8f8;
+  border: 1px solid #d4d6da;
+  border-radius: 9px;
+  overflow: hidden;
+}
+#website-work .work-slide .art { border-radius: 0; }
 #website-work .work-card-body {
   background: transparent;
   border: 0;
-  padding: 12px 0 4px;
+  padding: 12px clamp(12px, 2vw, 24px);
   overflow: visible;
 }
-#website-work .work-card-brief > p { -webkit-line-clamp: unset; }
-#website-work .work-slide .website-preview { object-fit: contain; }
-#website-work .featured-website { background: #151515; }
+#website-work .work-card-body .work-card-brief > p { -webkit-line-clamp: unset; }
+#website-work .work-slide .website-preview { object-position: center; }
 @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
   #website-work .work-slide .art { flex: 1 1 0; height: auto; }
   #website-work .work-card-body { flex: 0 0 auto; }
