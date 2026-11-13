@@ -11,3 +11,11 @@
  .notebook-flip .branding-card{transform-origin:50% 100%;backface-visibility:hidden;will-change:transform;box-shadow:0 12px 35px #1d252917}
  .notebook-flip .branding-card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(to top,rgba(12,19,27,var(--page-shade,0)),transparent 85%)}
 }
+
+.branding-heading h2 {
+  font-size: clamp(34px, 6.2vw, 108px);
+  text-wrap: balance;
+}
+@media (min-width: 992px) and (max-height: 750px) {
+  .branding-heading h2 { font-size: clamp(38px, min(6.2vw, 12vh), 108px); }
+}

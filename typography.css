@@ -9,3 +9,25 @@ h1,h2,.reel-word{letter-spacing:-.035em}
 .footer-mark{font-weight:600;letter-spacing:-.045em;font-size:14vw}
 dialog .case-grid h3{font-family:var(--font-display);font-weight:500;font-size:15px;letter-spacing:0}
 .services summary>span,.services summary>b{font-family:monospace}
+
+.statement {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 6vw, 110px);
+  padding-inline: 4%;
+}
+.statement-heading h2 {
+  font-size: clamp(32px, 5.1vw, 88px);
+  line-height: 1.12;
+  max-width: none;
+  overflow-wrap: anywhere;
+}
+.statement-heading > .eyebrow:last-child { margin-top: 36px; }
+.statement-copy { display: grid; gap: clamp(24px, 4vw, 64px); padding-top: 34px; }
+.statement-copy p { margin: 0; max-width: 43ch; font-size: clamp(17px, 1.45vw, 24px); line-height: 1.5; }
+@media (max-width: 750px) {
+  .statement { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-inline: 5%; }
+  .statement-heading h2 { font-size: clamp(30px, 7.6vw, 52px); }
+  .statement-copy { padding-top: 0; }
+}
