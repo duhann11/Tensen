@@ -27,3 +27,5 @@
 /* Website previews fill their image panel without a surrounding mockup mat. */
 #website-work .work-slide .art{padding:0;margin:0;align-items:stretch}
 #website-work .work-slide .browser-mock{width:100%;height:100%;align-self:stretch;border-radius:0;box-shadow:none;flex:1 1 auto;transform:none!important}
+
+#website-work .featured-website{padding:0;background:#fff} #website-work .website-preview{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transform:none}

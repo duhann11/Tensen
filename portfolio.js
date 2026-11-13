@@ -16,5 +16,36 @@ const websites=[
  ['Northwell Care','hospital','HEALTHCARE','A clearer path to care.','A fictional hospital needs an accessible website that helps people find departments and understand appointment enquiry steps.','Prioritise clarity, readable information, and reassurance without unverified clinical claims.','Care begins with clarity. Calm blue tones, plain language, and direct navigation support the visitor’s task.','Department summaries and a clearly labelled demonstration appointment request help visitors find the right next step. The prototype collects no patient data.','Content structure; homepage; department directory; doctor-profile direction; appointment journey prototype; and accessibility specifications.']
 ];
 websites.forEach(([name,id,sector,sub,brief,challenge,idea,detail,delivery])=>projects.push({name,website:id,sub,scope:`${sector} / UX & UI / WEBSITE DESIGN`,class:`web-project ${id}`,tag:'digital',brief,challenge,idea,detail,delivery,art:`<div class="browser-mock"><div class="browser-bar"><i></i><i></i><i></i><span>${name.toLowerCase().replaceAll(' ','')}.example</span></div><div class="mock-nav"><b>${name}</b><span>Explore &nbsp; About &nbsp; ↗</span></div><div class="mock-content"><span>${sector}</span><strong>${sub}</strong><em>${id==='restaurant'?'Discover our kitchen':id==='property'?'Explore homes':id==='school'?'Discover learning':id==='sportswear'?'Shop the collection':'Find a department'} ↗</em><div class="mock-visual"></div></div></div>`}));
+
+const featuredWebsites = [
+  {
+    "name": "DHRUVA Car Care",
+    "sub": "Car care for residential societies.",
+    "scope": "AUTOMOTIVE / WEBSITE DESIGN",
+    "url": "https://smart-cash-wash.vercel.app/",
+    "image": "dhruva",
+    "brief": "A car-care website presenting an organised washing service for residential societies, with subscription plans and a society enquiry journey."
+  },
+  {
+    "name": "GTBIT Careers",
+    "sub": "Your career. Your next opportunity.",
+    "scope": "EDUCATION / CAREER PORTAL",
+    "url": "https://git-careers.vercel.app/",
+    "image": "gtbit",
+    "brief": "A student career portal bringing placements, internships, hackathons and preparation resources together in one searchable experience."
+  },
+  {
+    "name": "Gupta Interior",
+    "sub": "Architectural surfaces, thoughtfully presented.",
+    "scope": "INTERIORS / CATALOGUE WEBSITE",
+    "url": "https://www.guptainterior.in/",
+    "image": "gupta-interior",
+    "brief": "A visual catalogue for marble, tiles and architectural surfaces, connecting material discovery with collections and product enquiries."
+  }
+];
+projects.filter(p=>p.tag==='digital').slice(0,3).forEach((project,index)=>{
+ const entry=featuredWebsites[index];
+ Object.assign(project,entry,{website:null,class:'featured-website',art:'<img class="website-preview" src="images/'+entry.image+'.jpg" alt="'+entry.name+' homepage preview" loading="lazy" width="1264" height="712">'});
+});
 const about=document.createElement('section');about.id='about';about.className='about-lab';about.innerHTML='<p class="eyebrow">// ABOUT TEN SEN LAB</p><div class="about-intro"><h2>Small beginnings.<br>Expansive thinking.</h2><p>TEN means dot. SEN means line. Together, they describe how we work: find the essential point, make meaningful connections, and create something with the room to grow.</p></div><div class="about-principles"><article><span>01 / OUR VISION</span><h3>Make the meaningful<br>impossible to miss.</h3><p>We want to build brands that people can understand, recognise, and feel connected to. Our ambition is to give a clear idea an enduring form, from a small independent business to an organisation entering its next chapter.</p></article><article><span>02 / OUR THINKING</span><h3>Curiosity before<br>conclusions.</h3><p>We start by listening. We question assumptions, look across disciplines, and search for the connection others may have overlooked. Strategy gives us a point of view; experimentation helps us discover how it should look, sound, and move.</p></article><article><span>03 / OUR PRACTICE</span><h3>Essential in form.<br>Rich in character.</h3><p>We believe every element should earn its place. We combine a considered structure with an expressive idea, then test the details across real touchpoints. The result should be useful to the business and meaningful to the people it reaches.</p></article></div>';
 document.querySelector('#services').before(about);document.querySelector('nav a[href="#studio"]').href='#about';document.querySelector('nav a[href="#about"]').textContent='About the lab';const aboutLink=document.createElement('a');aboutLink.href='#about';aboutLink.textContent='About ↗';document.querySelector('#menu').append(aboutLink);
