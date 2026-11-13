@@ -18,8 +18,8 @@ dialog .case-grid h3{font-family:var(--font-display);font-weight:500;font-size:1
   padding-inline: 4%;
 }
 .statement-heading h2 {
-  font-size: clamp(32px, 5.1vw, 88px);
-  line-height: 1.12;
+  font-size: clamp(30px, 3.45vw, 60px);
+  line-height: 1.08;
   max-width: none;
   overflow-wrap: anywhere;
 }
