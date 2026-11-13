@@ -52,3 +52,15 @@
   #website-work .work-slide .art { flex: 1 1 0; height: auto; }
   #website-work .work-card-body { flex: 0 0 auto; }
 }
+
+/* Preserve the whole captured homepage, even when the viewport is short. */
+#website-work .work-slide .website-preview {
+  object-fit: contain;
+  object-position: center;
+}
+#website-work .work-slide .featured-website { background: #181818; }
+@media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
+  #website-work .section-head > p { display: none; }
+  #website-work .work-slide { width: min(64vw, 125svh); flex-basis: min(64vw, 125svh); }
+  #website-work .work-card-body { padding-block: 8px; }
+}
