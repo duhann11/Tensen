@@ -6,7 +6,9 @@
  #website-work .project-track{height:100%;align-items:flex-start;padding-right:28px}
  #website-work .work-slide{width:clamp(620px,64vw,1000px);flex:0 0 clamp(620px,64vw,1000px);height:100%;display:flex;flex-direction:column;will-change:transform;border-radius:8px;text-align:left;transition:none;transform-origin:center center}
  #website-work .work-slide .art{width:100%;flex:0 0 44%;height:44%;min-height:0}
+ #website-work .work-slide .art.featured-website{flex-basis:62%;height:62%}
  #website-work .work-card-body{flex:1;min-height:0;width:100%;grid-template-columns:1fr 1.1fr;padding:24px;gap:28px;align-content:start}
+ #website-work .work-slide:has(.featured-website) .work-card-body{padding-top:40px}
  #website-work .work-card-body h3{font-size:clamp(23px,2vw,31px);line-height:1.14;margin:16px 0 18px}
  #website-work .work-card-body .work-card-brief>p{font:italic clamp(14px,1.18vw,17px)/1.5 Switzer,Arial;margin:30px 0 20px;-webkit-line-clamp:8}
  #website-work .work-card-brief>span{font-size:8px;line-height:1.5}
@@ -19,6 +21,7 @@
  #website-work .work-pin{padding-top:12px;padding-bottom:12px}
  #website-work .section-head{margin-bottom:10px}
  #website-work .work-card-body{padding:16px 20px;gap:20px}
+ #website-work .work-slide:has(.featured-website) .work-card-body{padding-top:26px}
  #website-work .work-card-body h3{font-size:21px;margin:9px 0 12px}
  #website-work .work-card-body .work-card-brief>p{font-size:13px;line-height:1.4;margin:20px 0 12px;-webkit-line-clamp:5}
  #website-work .work-progress{margin-top:12px}
