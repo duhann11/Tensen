@@ -1,0 +1,6 @@
+/* Vertical "connecting thread" reveal for the Capabilities rows. */
+@media(min-width:992px){
+ .cap-list-track{position:absolute;top:0;bottom:0;left:-26px;width:2px;pointer-events:none}
+ .cap-thread{position:absolute;inset:0;background:var(--accent);transform-origin:top;transform:scaleY(0)}
+ .cap-node{position:absolute;left:-3px;width:8px;height:8px;border-radius:50%;background:var(--accent);transform:scale(0)}
+}

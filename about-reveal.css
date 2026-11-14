@@ -1,0 +1,7 @@
+/* Dot -> line scroll reveal for the About section's three principle columns. */
+@media(min-width:992px){
+ .about-principles{position:relative}
+ .principle-track{position:absolute;top:0;left:0;right:0;height:2px;pointer-events:none}
+ .principle-dot{position:absolute;top:-3px;left:-1px;width:8px;height:8px;border-radius:50%;background:var(--accent);transform:scale(0);transform-origin:center}
+ .principle-line{position:absolute;inset:0 0 auto 0;height:2px;background:var(--accent);transform-origin:left;transform:scaleX(0)}
+}

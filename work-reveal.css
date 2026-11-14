@@ -12,7 +12,7 @@
 .showcase-media:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,#0005 45%,#0009);pointer-events:none}
 .showcase-toggle{position:absolute;inset:0;width:100%;border:0;background:transparent;color:#111;display:flex;align-items:center;justify-content:center;padding:24px;transition:color .16s linear;z-index:1}
 .showcase-label{display:flex;align-items:center;justify-content:center;gap:22px;max-width:100%;transition:transform .65s cubic-bezier(.22,1,.36,1)}
-.showcase-name{font-family:var(--font-display);font-size:clamp(35px,5.8vw,94px);line-height:1.05;text-align:center;letter-spacing:-.035em}
+.showcase-name{font-family:var(--font-display);font-size:clamp(22px,3.4vw,50px);line-height:1.05;text-align:center;letter-spacing:-.035em}
 .showcase-tags{display:flex;align-items:flex-start;flex-direction:column;gap:4px;text-align:left;flex-shrink:0}
 .showcase-tags>span{border:1px solid currentColor;border-radius:30px;padding:3px 9px;font:10px/1.1 monospace;letter-spacing:.02em}
 .is-open .showcase-toggle{color:#fff;text-shadow:0 1px 15px #0005}
@@ -32,7 +32,7 @@
 @media(max-width:650px){
  .reveal-work{padding:55px 4% 25px}.showcase-heading{margin-bottom:28px}
  .showcase-row{height:145px}.showcase-row.is-open{height:380px}
- .showcase-label{flex-direction:column;gap:12px}.showcase-name{font-size:clamp(30px,8.5vw,48px)}
+ .showcase-label{flex-direction:column;gap:12px}.showcase-name{font-size:clamp(19px,6vw,28px)}
  .showcase-tags{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:4px}.showcase-tags>span{font-size:8px;padding:4px 7px}
  .showcase-bottom{left:18px;right:18px;bottom:18px;flex-wrap:wrap;gap:12px}.showcase-bottom p{font-size:13px}
  .showcase-web .showcase-media .art{padding:15px 12px 100px}.showcase-web .browser-mock{height:220px}
