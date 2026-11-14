@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1264" height="712" viewBox="0 0 1264 712">
+<defs><pattern id="stripes" width="110" height="110" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="110" height="110" fill="#304436"/><rect width="28" height="110" fill="#d9f554"/></pattern></defs>
+<rect width="1264" height="712" fill="#18211d"/>
+<g fill="#d9f554" font-family="Arial,sans-serif"><text x="64" y="63" font-size="26" font-weight="700">PACE Athletics</text><g font-size="14"><text x="850" y="60">Collection</text><text x="970" y="60">Our approach</text><text x="1110" y="60">Demo bag ↗</text></g></g>
+<path d="M0 94H1264" stroke="#d9f554" opacity=".2"/>
+<rect x="746" y="155" width="444" height="450" fill="url(#stripes)"/>
+<circle cx="968" cy="380" r="125" fill="none" stroke="#fff" opacity=".35"/>
+<g fill="#d9f554" font-family="Arial,sans-serif"><text x="76" y="205" font-family="monospace" font-size="12" letter-spacing="2">MOVEMENT ESSENTIALS / EVERYDAY ATHLETES</text><g font-size="86" font-weight="700" letter-spacing="-4"><text x="70" y="311">Move at your</text><text x="70" y="401">own pace.</text></g><g font-size="19"><text x="76" y="461">Considered training essentials for the way you move.</text><text x="76" y="491">For your next run, session, or reset.</text></g></g>
+<rect x="76" y="533" width="252" height="53" fill="#d9f554"/><text x="97" y="566" fill="#18211d" font-family="Arial,sans-serif" font-size="17">Explore the collection ↗</text>
+<path d="M0 665H1264" stroke="#d9f554" opacity=".2"/><text x="76" y="695" fill="#d9f554" font-family="monospace" font-size="11" letter-spacing="2">YOUR NEXT MOVE.</text></svg>

@@ -53,12 +53,12 @@
   #website-work .work-card-body { flex: 0 0 auto; }
 }
 
-/* Fill the preview panel edge-to-edge, cropping rather than letterboxing. */
+/* Preserve the whole captured homepage, even when the viewport is short. */
 #website-work .work-slide .website-preview {
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
 }
-#website-work .work-slide .featured-website { background: #fff; }
+#website-work .work-slide .featured-website { background: #181818; }
 @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
   #website-work .section-head > p { display: none; }
   #website-work .work-slide { width: min(64vw, 125svh); flex-basis: min(64vw, 125svh); }

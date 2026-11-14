@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1264" height="712" viewBox="0 0 1264 712">
+<rect width="1264" height="712" fill="#ecf3f4"/>
+<g fill="#244e62" font-family="Arial,sans-serif"><text x="64" y="63" font-size="26" font-weight="700">Northwell Care</text><g font-size="14"><text x="820" y="60">Departments</text><text x="960" y="60">Our approach</text><text x="1100" y="60">Appointments ↗</text></g></g>
+<path d="M0 94H1264" stroke="#244e62" opacity=".2"/>
+<path d="M746 380a222 225 0 0 1 444 0v225H746Z" fill="#78aaa9"/>
+<path d="M932 155h72v450h-72Z M746 344h444v72H746Z" fill="#eaf3ef"/>
+<g fill="#244e62" font-family="Arial,sans-serif"><text x="76" y="205" font-family="monospace" font-size="12" letter-spacing="2">HEALTHCARE / CLARITY FIRST</text><g font-size="81" font-weight="700" letter-spacing="-4"><text x="70" y="311">A clearer</text><text x="70" y="401">path to care.</text></g><g font-size="19"><text x="76" y="461">Explore departments with confidence.</text><text x="76" y="491">Understand the next step in your care journey.</text></g></g>
+<rect x="76" y="533" width="227" height="53" fill="#244e62"/><text x="97" y="566" fill="#ecf3f4" font-family="Arial,sans-serif" font-size="17">Find a department ↗</text>
+<path d="M0 665H1264" stroke="#244e62" opacity=".2"/><text x="76" y="695" fill="#244e62" font-family="monospace" font-size="11" letter-spacing="2">FIND YOUR STARTING POINT.</text></svg>
